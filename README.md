@@ -1,43 +1,67 @@
-[![CircleCI](https://circleci.com/gh/cybergoatpsyops/microservicesProject.svg?style=svg)](https://circleci.com/gh/cybergoatpsyops/microservicesProject)
+
+## Deployment
+
+environment setup
+clone repo
+git clone https://github.com/cybergoatpsyops/microservicesProject
+cd microservicesProject
+
+activate venv
+python3 -m venv ~/.devops
+source ~/.devops/bin/activate
+
+make install
+
+Other Libraries to Install
+
+Docker
+Hadolint
+Kubernets (Minikube)
+
+brew install hadolint
+make lint
+
+brew cask install minikube
+
+./run_docker.sh
+./upload_docker.sh
+
+minikube start
+./run_kubernetes.sh
+
+minikube delete
+minikube stop
 
 
-## Project Overview
 
-In this project, you will apply the skills you have acquired in this course to operationalize a Machine Learning Microservice API. 
 
-You are given a pre-trained, `sklearn` model that has been trained to predict housing prices in Boston according to several features, such as average rooms in a home and data about highway access, teacher-to-pupil ratios, and so on. You can read more about the data, which was initially taken from Kaggle, on [the data source site](https://www.kaggle.com/c/boston-housing). This project tests your ability to operationalize a Python flask app—in a provided file, `app.py`—that serves out predictions (inference) about housing prices through API calls. This project could be extended to any pre-trained machine learning model, such as those for image recognition and data labeling.
+## Built With
 
-### Project Tasks
+* [Visual Stuido Code](https://code.visualstudio.com/) - Code Editor
+* [iTerm2](https://iterm2.com/) - macOS Terminal Emulator
+* [AWS CLI](https://aws.amazon.com/cli/) - AWS Command Line Interface
+* [Git](https://git-scm.com/) - Version Control System
 
-Your project goal is to operationalize this working, machine learning microservice using [kubernetes](https://kubernetes.io/), which is an open-source system for automating the management of containerized applications. In this project you will:
-* Test your project code using linting
-* Complete a Dockerfile to containerize this application
-* Deploy your containerized application using Docker and make a prediction
-* Improve the log statements in the source code for this application
-* Configure Kubernetes and create a Kubernetes cluster
-* Deploy a container using Kubernetes and make a prediction
-* Upload a complete Github repo with CircleCI to indicate that your code has been tested
+## Contributing
 
-You can find a detailed [project rubric, here](https://review.udacity.com/#!/rubrics/2576/view).
+Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
 
-**The final implementation of the project will showcase your abilities to operationalize production microservices.**
+## Versioning
 
----
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
 
-## Setup the Environment
+## Authors
 
-* Create a virtualenv and activate it
-* Run `make install` to install the necessary dependencies
+* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
 
-### Running `app.py`
+See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
-1. Standalone:  `python app.py`
-2. Run in Docker:  `./run_docker.sh`
-3. Run in Kubernetes:  `./run_kubernetes.sh`
+* **Leo B** - *Forked* -
 
-### Kubernetes Steps
+## License
 
-* Setup and Configure Docker locally
-* Setup and Configure Kubernetes locally
-* Create Flask app in Container
-* Run via kubectl
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+## Acknowledgments
+
+TBD
