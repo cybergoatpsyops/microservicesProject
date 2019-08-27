@@ -1,1 +1,3 @@
-<paste log output from Kubernetes-mediated prediction, here>
+NAME                            READY   STATUS    RESTARTS   AGE
+projectdemo-66d865bc68-j4zcf    1/1     Running   0          53m
+projectdemo1-7f48958bf6-96g2p   1/1     Running   0          52m
