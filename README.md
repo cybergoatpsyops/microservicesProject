@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/cybergoatpsyops/microservicesProject.svg?style=svg)](https://circleci.com/gh/cybergoatpsyops/microservicesProject)
+
 
 ## Project Overview
 
