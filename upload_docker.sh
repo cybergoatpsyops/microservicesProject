@@ -9,7 +9,8 @@ dockerpath=cybergoatpsyops/projectdemo
 
 # Step 2:  
 # Authenticate & tag
-echo "Docker ID and Image: $dockerpath"
+docker login
+docker tag 264666b6e33f cybergoatpsyops/projectdemo:lastest
 
 # Step 3:
 # Push image to a docker repository
