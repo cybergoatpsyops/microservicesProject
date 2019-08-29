@@ -50,7 +50,7 @@ def predict():
         }
         
         result looks like:
-        { "prediction": [ <val> ] }
+        { "prediction": [ 20.35373177134412 ] }
         
         """
 
